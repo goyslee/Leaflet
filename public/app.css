@@ -1,0 +1,188 @@
+html {
+	height: 100%;
+}
+
+
+body {
+	background: url("https://images.pexels.com/photos/113720/pexels-photo-113720.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat fixed center;
+	/*background: url("https://farm4.staticflickr.com/3384/3280541358_00538ce878.jpg") no-repeat fixed center;*/
+	background-size: cover;
+	font-family: 'Inconsolata', monospace;
+	color: #fff;
+	
+	
+
+}
+
+
+.jumbotron{
+	background-color:rgba(122, 123, 124, 0.3);
+	color: #fff;
+	/*font-family: 'Play', sans-serif;*/
+	font-family: 'Inconsolata', monospace;
+	max-width: 85%;
+	margin: 10% auto;
+}
+
+.jumbotron p {
+    font-family: 'Inconsolata', monospace;
+	/*font-size: 1.2em;*/
+	/*font-family: 'Play', sans-serif;*/
+	/*margin-bottom: 30px;
+	margin-top: 30px;*/
+	color:#D9DED7;
+}
+
+
+
+.navbar-inverse {
+	background-color:rgba(15, 33, 85, 0.5);
+	border-color: rgb(151, 200, 237);
+	border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: rgb(151, 200, 237);
+}
+
+.navbar-inverse .navbar-brand {
+	color: rgb(151, 200, 237);
+	font-weight: 700;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 4px 3px rgba(0,0,0,0.1),
+				 0px 4px 3px rgba(0,0,0,0.1);
+}
+
+h1 {
+	margin-top: 5%;
+	font-weight: 700;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 4px 3px rgba(0,0,0,0.1),
+				 0px 4px 3px rgba(0,0,0,0.1);
+}
+
+
+
+/*hamburger*/
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: steelblue;
+}
+
+button {
+	padding: 10px 15px 10px 15px;
+	background-color: rgba(15, 33, 85, 0.5);
+	border-color: rgb(151, 200, 237);
+}
+
+button:hover {
+	background-color:rgba(15, 33, 85, 0.5);
+	color:rgb(151, 200, 237);
+	border-color: rgb(151, 200, 237);
+	border-radius: 4px;
+}
+
+button:focus {
+	background-color:rgba(15, 33, 85, 0.5);
+	color:white;
+	border-color: rgb(151, 200, 237);
+	border-radius: 4px;
+}
+
+h2 {
+	margin: 5% 5%;
+	font-weight: 700;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 4px 3px rgba(0,0,0,0.1),
+				 0px 4px 3px rgba(0,0,0,0.1);
+}
+
+h3 {
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 4px 3px rgba(0,0,0,0.1),
+				 0px 4px 3px rgba(0,0,0,0.1);
+}
+/*also navbar kozepre*/
+.center {
+  text-align:center;
+  }
+
+.ccenter {
+    display:inline-block;
+    float:none;
+ }
+
+.fa-twitter {
+	font-size: 1.5em;
+}
+
+.fa-facebook-square {
+	font-size: 1.5em;
+}
+
+.fa-google-plus {
+	font-size: 1.5em;
+}
+
+.myform {
+	margin: 5% 5%;
+	margin-top: 8%;
+}
+
+.mytext {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8)
+}
+
+.container > img {
+	margin: 5% 5%;
+}
+
+.black {
+	color: black;
+}
+
+.img-responsive {
+    margin: 2% auto;
+}
+
+.form-control {
+	max-width: 75%;
+}
+
+
+.red {
+	color: red;
+	margin-left: 35%;
+	font-size: 1.4em;
+}
+
+input {
+	color: black;
+}
+
+.required {
+      position:relative;
+}
+
+.required:after {
+      position:absolute;
+      top:0;
+      right:26%;
+      content: "*";
+      font-size: 0.9em;
+      color:#ff0000;
+      margin: 0 0;
+      padding: 0 0;
+}
+
+img.content {
+   
+}
+.required:after { 
+	
+}

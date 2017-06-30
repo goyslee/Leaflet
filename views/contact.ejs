@@ -1,0 +1,38 @@
+<% include partials/headcontact %>
+<% include partials/header1 %>
+<div class="container">
+	<div class="row">
+	  <div class="col-lg-6">
+	    <form class="myform" action="contact/send" method="post" required><br>
+			<input class="cb form-conrol" type="checkbox" name="query" >Get in touch</input>
+			<input class="cb form-conrol" type="checkbox" name="quote" >Quote (Click for which service)</input>
+			<br>
+			<br>
+			<div class="requireda"><input class="form-control requireda"type="text" placeholder="Your Name*" name="name" required></div>
+			<br>
+			<div class="requiredb"><input class="form-control requiredb"type="text" placeholder="Company/Organization*" name="company"  required></div>
+			<br>
+			<div class="requiredc"><input class="form-control requiredc"type="text" placeholder="Your Postcode*" name="postcode" required></div>
+			<br>
+			<div class="requiredd"><input class="form-control requiredd"type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Contact number*" name="contactNumber"required></div>
+			<br>
+			<div class="requirede"><input class="form-control requirede"type="email" placeholder="Email*" name="email" required></div>
+		<p>(Your email addres will be kept private and will not be used by anyone expect Leaflet services)</p>
+			<br>
+			<h4>Enquiry Details</h4>
+			<p>Please fill out your enquiry details bellow</p>
+			<br>
+			<p>Message or request*</p>
+			<div class="requiredf"><textarea class="form-control requiredf" rows="5" cols="70" name="message" required></textarea></div><br>
+			<input class="btn btn-primary" type="Submit" value="Send">
+		</form>
+		</div>
+		<div style="margin-top: 7%;" class="col-lg-6">
+			<!--<img class="responsive" src="/leafletContact.jpg" style="width: 100%;"></img>-->
+		    <h2 style="margin-left: 2%;">You can contact us:</h2>
+		  	<h2>Tel: 099 999 9999</h2>
+		  	<!--<h2 style="padding-bottom:10%;">Email: leafletcareforyourbusiness@gmail.com</h2>-->
+		 </div>
+	 </div> 
+ </div>
+<% include partials/footer %>

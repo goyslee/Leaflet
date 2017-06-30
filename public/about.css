@@ -1,0 +1,10 @@
+body {
+    background: url("https://images.pexels.com/photos/173665/pexels-photo-173665.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat fixed center;
+    background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	color: #750404;
+	max-width: 100%;
+	text-shadow: 0px 0px 1px rgba(165, 19, 19, 0.4),
+				 0px 0px 1px rgba(165, 19, 19, 0.1),
+				 0px 0px 1px rgba(165, 19, 19, 0.1);
+}
