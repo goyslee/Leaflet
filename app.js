@@ -43,6 +43,10 @@ app.get("/googlef19f46162e1fd620.html", function(req, res){
     res.render("googlef19f46162e1fd620");
 });
 
+app.get("/robots.txt", function(req, res){
+    res.render("robots.txt");
+});
+
 app.get("/about", function(req, res){
     res.render("about");
 });
