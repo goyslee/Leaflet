@@ -1,11 +1,10 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
-var sitemap = require('express-sitemap')();
-var app = require('express')();
+var app = express();
 
 
-
+app.set('view engine', 'html');
 
  
 
@@ -78,7 +77,7 @@ app.post("/contact/send", function(req, res){
         
     });
 });
-sitemap.generate(app);
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("LeafletService server is running!");
 });
