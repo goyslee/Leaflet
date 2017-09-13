@@ -49,8 +49,8 @@ app.post("/contact/send", function(req, res){
     var transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-          user: "gmonlegen@gmail.com",//"leafletcareforyourbusiness@gmail.com",
-          pass: "zsotti79"//"password2017"
+          user: "leafletcareforyourbusiness@gmail.com",
+          pass: "password2017"
       }
       
     });
@@ -59,7 +59,7 @@ app.post("/contact/send", function(req, res){
         host: "smtp.gmail.com",
         port: 465,
         secure: true,
-        from: "Leaflet Care <leafletcareforyourbusiness@gmail.com>",
+        from: req.body.name + "<leafletcareforyourbusiness@gmail.com>",
         to: "leafletcareforyourbusiness@gmail.com",
         subject: "LeafletService",
         text: "You have a submission with the following details...  Quote?: " + req.body.quote + "Query?: " + req.body.query +  "Name: " + req.body.name + "Company/Organization: " + req.body.company + "Post Code: " + req.body.postcode + "Contact Number: " + req.body.contactNumber + "Email: " + req.body.email + "Message: " + req.body.message,
