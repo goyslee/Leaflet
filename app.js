@@ -1,30 +1,14 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
-var app = express();
+var sitemap = require('express-sitemap')();
+var app = require('express')();
 
-// var phpExpress = require('php-express')({
- 
-//   // assumes php is in your PATH
-//   binPath: '/usr/bin/php' 
-// });
 
-// set view engine to php-express
-// var path = require ('path');
-// app.use(express.static(path.join('./views')));
-// app.engine('php', phpExpress.engine);
-// app.set('view engine', 'php');
-app.set('view engine', 'html');
-// app.set('views', './views');
+
+
  
-// routing all .php file to php-express
-// app.all(/.+\.php$/, phpExpress.router);
- 
-// var server = app.listen(3000, function () {
-//   var host = server.address().address;
-//   var port = server.address().port;
-//   console.log('PHPExpress app listening at http://%s:%s', host, port);
-// });
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -94,12 +78,7 @@ app.post("/contact/send", function(req, res){
         
     });
 });
-
-// app.get("/form", function(req, res){
-//     res.render("form.php");
-// });
-
-
+sitemap.generate(app);
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("LeafletService server is running!")
+    console.log("LeafletService server is running!");
 });
