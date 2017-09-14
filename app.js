@@ -50,7 +50,8 @@ app.post("/contact/send", function(req, res){
       service: "Gmail",
       auth: {
           user: process.env.USER,
-          pass: process.PASSWORD
+          pass: process.env.PASSWORD
+      }
       
     });
     
