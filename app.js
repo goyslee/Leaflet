@@ -62,7 +62,7 @@ app.post("/contact/send", function(req, res){
         from: "Leaflet Care <leafletcareforyourbusiness@gmail.com>",
         to: "leafletcareforyourbusiness@gmail.com",
         subject: "LeafletService",
-        text: req.body.name +" at "+ req.body.company +  "Quote?: " + req.body.quote + "Query?: " + req.body.query +  "Name: " + req.body.name + "Company/Organization: " + req.body.company + "Post Code: " + req.body.postcode + "Contact Number: " + req.body.contactNumber + "Email: " + req.body.email + "Message: " + req.body.message,
+        text: req.body.name +", "+ req.body.company +  "Quote?: " + req.body.quote + "Query?: " + req.body.query +  "Name: " + req.body.name + "Company/Organization: " + req.body.company + "Post Code: " + req.body.postcode + "Contact Number: " + req.body.contactNumber + "Email: " + req.body.email + "Message: " + req.body.message,
         html: "<p>You have a submission with the following details...</p><ul><li>Quote?: " + req.body.quote + "</li><li>Query?: " + req.body.query +  "</li><li>Name: " + req.body.name + "</li><li>Company/Organization: " + req.body.company + "</li><li>Post Code: " + req.body.postcode + "</li><li>Contact Number: " + req.body.contactNumber + "</li><li>Email: " + req.body.email + "</li><li>Message: " + req.body.message + "</li></ul>"
     };
     
