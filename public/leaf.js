@@ -18,8 +18,8 @@ $("form").submit(function () {
             //DONT' ITS JUST CHECK THE CHECKBOX TO SUBMIT FORM DATA    
             checkbox_this.attr('value','NO');
         }
-    })
-})
+    });
+});
 
 $(document).on("keydown", ".form-control.requireda", function(){
     $(this).removeClass("requireda");
